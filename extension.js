@@ -34,7 +34,7 @@ class Counter {
 		let characterCount = 0;
         if (docContent != "") {
 			characterCount = docContent.replace(/[\r\n\s]+/g, '').length;
-            lineCount = docContent.split("\r\n").length;
+            lineCount = docContent.split(/\r\n/).length;
 		}
 		return `${lineCount} / ${characterCount}`;
 	}
